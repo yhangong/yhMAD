@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2C9CA"
+    tools:context=".ComposeNumbersActivity">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="521dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/firstnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text=""
+                android:textSize="40dp"/>
+
+            <TextView
+                android:id="@+id/plusicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/secondnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonNumber3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1A4C81"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:textColor="#FFFFFF"
+                android:text="Button3" />
+
+            <Button
+                android:id="@+id/buttonNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1A4C81"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:text="Button2" />
+
+            <Button
+                android:id="@+id/buttonNumber1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1A4C81"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:text="Button1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/numbersLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Number boxes -->
+
+            <Button
+                android:id="@+id/buttonNumber4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1A4C81"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:text="Button4" />
+
+            <Button
+                android:id="@+id/buttonNumber5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1A4C81"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:text="Button5" />
+
+            <Button
+                android:id="@+id/buttonNumber6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1A4C81"
+                android:textColor="#FFFFFF"
+                android:text="Button6" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#0DBCDA"
+                android:textColor="#FFFFFF"
+                android:onClick="onSubmitClick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#771A81"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="550dp"
+            android:text="Exit" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Score: 0"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+    <!-- Button to generate new target number -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
